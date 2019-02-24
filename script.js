@@ -19,6 +19,15 @@ var churchillSpeech = {
     },
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech];
 
+var userName = window.prompt("Enter your name, then click OK");
+
+if (userName === "" || userName === null) {
+  console.log ("Ok, I'll just call you User.");
+} else if (userName !== "") {
+  console.log ("Hi " + userName + "!");
+} 
+     
+
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
 });
